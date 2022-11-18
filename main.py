@@ -39,7 +39,7 @@ db.metadata.create_all(engine)
 
 CHOICE = ["🤚", "👊","✌"]
 YES_NO = ["✅", "❌"]
-DISCORD_BOT_TOKEN = "MTA0MjcyOTQxNDMzMDQzNzY0Mw.G74nSS.QmIi_QJK78bFMNNem86kqjHMC9DuQbM4yNB0Mg"
+DISCORD_BOT_TOKEN = "ENTER YOUR TOKEN HERE"
 
 
 
