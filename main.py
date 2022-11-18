@@ -304,46 +304,32 @@ async def on_message(message):
 
 
     if message.content.endswith('NON'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('non'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('nn'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('NN'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
 
     if message.content.endswith('NON?'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('non?'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('nn?'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('NN?'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
 
     if message.content.endswith('NON ?'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('non ?'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('nn ?'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
     if message.content.endswith('NN ?'):
-        bot_msg = await channel.send("STITI !")
+        bot_msg = await channel.send("BRIL !")
 
-    if message.content.endswith('tg?'):
-        bot_msg = await channel.send("V !")
-    if message.content.endswith('TG?'):
-        bot_msg = await channel.send("V !")
-
-    if message.content.endswith('tg ?'):
-        bot_msg = await channel.send("V !")
-    if message.content.endswith('TG ?'):
-        bot_msg = await channel.send("V !")
-
-    if message.content.endswith('tg'):
-        bot_msg = await channel.send("V !")
-    if message.content.endswith('TG'):
-        bot_msg = await channel.send("V !")
 
 # Fun Msg
 
@@ -351,8 +337,12 @@ async def on_message(message):
 # ANNONCE !
 
     if message.content.startswith('!annonce'):
-            
-            embed = discord.Embed(title="ANNONCE !", description = message.content, color=0x9208ea)
+            mcs = message.content.split(' ')[1:]
+            new_mcs = ''
+
+            for i in mcs:
+                new_mcs = new_mcs + ' ' + i
+            embed = discord.Embed(title="ANNONCE !", description = new_mcs, color=0x9208ea)
             embed.set_footer(text=f"Par : {host}", icon_url=host.avatar_url)
             bot_msg = await channel.send(embed=embed)
 
