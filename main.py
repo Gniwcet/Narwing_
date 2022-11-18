@@ -39,7 +39,7 @@ db.metadata.create_all(engine)
 
 CHOICE = ["🤚", "👊","✌"]
 YES_NO = ["✅", "❌"]
-DISCORD_BOT_TOKEN = "ENTER YOUR TOKEN HERE"
+DISCORD_BOT_TOKEN = "MTA0MjcyOTQxNDMzMDQzNzY0Mw.G74nSS.QmIi_QJK78bFMNNem86kqjHMC9DuQbM4yNB0Mg"
 
 
 
@@ -121,12 +121,7 @@ def add_result_to_classement(winner_id:int, loser_id:int):
 client = discord.Client(activity=discord.Game(""))
 
 
-
-@client.event
-async def on_ready():
-    print(f'Ready avec {client.user}')
-
-# DESC
+#Statut
 
 command1 = ["!sh : Affronte Narwing_", "!sh vs @ : Affronte ton ami", "!classement : Affiche le classement"]
 command2 = ["ping", "quoi"]
@@ -160,7 +155,7 @@ async def status_task():
 async def on_ready():
     client.loop.create_task(status_task())
 
-#DESC
+#Statut
 
 @client.event
 async def on_message(message):
@@ -348,6 +343,12 @@ async def on_message(message):
 
 # ANNONCE !
 
+
+# Bienvenu msg
+
+
+
+# Bienvenu msg
 
 
     if message.content.startswith('!sh vs'):
